@@ -4,30 +4,25 @@ def takeANumber(katzDeliLine, name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.size + " in line."
 end
 
-function nowServing(katzDeliLine) {
-  if(katzDeliLine.size === 0) {
+def nowServing(katzDeliLine)
+  if(katzDeliLine.size === 0) 
     return "There is nobody waiting to be served!"
-  }
-  else {
+  else 
     return "Currently serving " + katzDeliLine.shift() + "."
-  }
+  end
 end
 
 def currentLine(katzDeliLine)
   var tempString = "The line is currently: "
-  if(katzDeliLine.size === 0) {
+  if(katzDeliLine.size === 0)
     return "The line is currently empty."
-  }
-  else {
+  else
     for(let i = 0; i < katzDeliLine.size; i++) {
       tempString += (i + 1) + ". " + katzDeliLine[i]
-      if((i + 1) === katzDeliLine.size) {
-
-      }
-      else {
+      if((i + 1) === katzDeliLine.size)
+      else 
         tempString += ", "
-      }
-    }
+      end
+    end
     return tempString
-  }
 end
