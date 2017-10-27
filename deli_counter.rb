@@ -13,14 +13,14 @@ def nowServing(katzDeliLine)
 end
 
 def currentLine(katzDeliLine)
-  var tempString = "The line is currently: "
+  tempString = "The line is currently: "
   if(katzDeliLine.size === 0)
-    return "The line is currently empty."
+    return tempString
   else
     i = 0
-    for(let i = 0; i < katzDeliLine.size; i++) 
-        tempString += (i + 1) + ". " + katzDeliLine[i]
-        if((i + 1) === katzDeliLine.size)
+    katzDeliLine.each do |person|
+        tempString += (i + 1) + ". " + person
+        if i = 1 === katzDeliLine.size
         else
           tempString += ", "
         end
