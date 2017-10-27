@@ -12,7 +12,7 @@ def nowServing(katzDeliLine)
   end
 end
 
-def currentLine(katzDeliLine)
+def line(katzDeliLine)
   tempString = "The line is currently: "
   if(katzDeliLine.size === 0)
     return tempString
