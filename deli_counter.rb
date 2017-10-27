@@ -19,7 +19,7 @@ def line(katzDeliLine)
   else
     i = 0
     katzDeliLine.each do |person|
-        tempString += (i + 1) + ". " + person
+        tempString += "#{i + 1}. #{person}"
         if i = 1 === katzDeliLine.size
         else
           tempString += ", "
