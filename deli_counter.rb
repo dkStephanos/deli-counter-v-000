@@ -15,7 +15,7 @@ end
 def line(katzDeliLine)
   tempString = "The line is currently: "
   if(katzDeliLine.size === 0)
-    return tempString
+    return "The line is currently empty."
   else
     i = 0
     katzDeliLine.each do |person|
