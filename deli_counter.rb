@@ -23,7 +23,7 @@ def line(katzDeliLine)
         tempString += "#{(counter + 1)}. #{person}"
         if counter + 1 === katzDeliLine.size
         else
-          tempString += ", "
+          tempString += " "
         end
         counter += 1
       end
