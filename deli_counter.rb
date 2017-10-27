@@ -6,16 +6,16 @@ end
 
 def now_serving(katzDeliLine)
   if(katzDeliLine.size === 0)
-    return "There is nobody waiting to be served!"
+    puts "There is nobody waiting to be served!"
   else
-    return "Currently serving " + katzDeliLine.shift() + "."
+    puts "Currently serving " + katzDeliLine.shift() + "."
   end
 end
 
 def line(katzDeliLine)
   tempString = "The line is currently: "
   if(katzDeliLine.size === 0)
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else
     i = 0
     katzDeliLine.each do |person|
@@ -27,5 +27,5 @@ def line(katzDeliLine)
         i += 1
       end
     end
-    return tempString
+    puts tempString
 end
