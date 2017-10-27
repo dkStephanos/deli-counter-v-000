@@ -1,8 +1,8 @@
 # Write your code here.
-def takeANumber(katzDeliLine, name) 
+def takeANumber(katzDeliLine, name)
   katzDeliLine.push(name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.size + " in line."
-}
+end
 
 function nowServing(katzDeliLine) {
   if(katzDeliLine.size === 0) {
@@ -13,7 +13,7 @@ function nowServing(katzDeliLine) {
   }
 end
 
-def currentLine(katzDeliLine) 
+def currentLine(katzDeliLine)
   var tempString = "The line is currently: "
   if(katzDeliLine.size === 0) {
     return "The line is currently empty."
