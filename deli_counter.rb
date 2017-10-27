@@ -1,10 +1,10 @@
 # Write your code here.
-def takeANumber(katzDeliLine, name)
+def take_a_number(katzDeliLine, name)
   katzDeliLine.push(name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.size + " in line."
 end
 
-def nowServing(katzDeliLine)
+def now_serving(katzDeliLine)
   if(katzDeliLine.size === 0)
     return "There is nobody waiting to be served!"
   else
