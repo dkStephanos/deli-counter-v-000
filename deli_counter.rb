@@ -18,14 +18,14 @@ def line(katzDeliLine)
     puts "The line is currently empty."
     return
   else
-    i = 0
+    counter = 0
     katzDeliLine.each do |person|
-        tempString += "#{(i + 1)}. #{person}"
-        if i = 1 === katzDeliLine.size
+        tempString += "#{(counter + 1)}. #{person}"
+        if counter + 1 === katzDeliLine.size
         else
           tempString += ", "
         end
-        i += 1
+        counter += 1
       end
     end
     puts tempString
