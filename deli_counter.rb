@@ -1,5 +1,5 @@
 # Write your code here.
-def takeANumber(katzDeliLine, name)
+def line(katzDeliLine, name)
   katzDeliLine.push(name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.size + " in line."
 end
